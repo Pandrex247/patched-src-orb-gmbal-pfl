@@ -119,22 +119,6 @@
                     <artifactId>maven-source-plugin</artifactId>
                     <version>3.0.1</version>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>maven-bundle-plugin</artifactId>
-                    <version>${maven-bundle-plugin.version}</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>${maven-javadoc-plugin.version}</version>
-                    <configuration>
-                        <failOnError>false</failOnError>
-                        <additionalOptions>
-                            <additionalOption>${javadoc.options}</additionalOption>
-                        </additionalOptions>
-                    </configuration>
-                </plugin>
             </plugins>
         </pluginManagement>
         
@@ -211,7 +195,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven-javadoc-plugin.version}</version>
+                <version>3.0.0-M1}</version>
             </plugin>
 
             <!-- override default "built-by" entry, which points to a developer's user id -->
